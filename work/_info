@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maxim/Floobits/OurCPU
+vcpu
+Z1 !s110 1541168147
+!i10b 1
+!s100 ^`hDiEiNC;2@Nn=XAIUT13
+In361]>S7O6`:38j[i=Ed80
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1541168141
+8cpu.v
+Fcpu.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1541168147.000000
+Z5 !s107 InstructionStop.v|InstructionSub.v|InstructionAdd.v|RAM.v|cpu.v|testbench_1.v|
+Z6 !s90 testbench_1.v|
+!i113 1
+Z7 tCvgOpt 0
+vInstructionAdd
+R1
+!i10b 1
+!s100 ]2oQm_N0F0Z7P^V8hI5@X2
+I5]O??:UZLmJ6f6DKFgUW=3
+R2
+R0
+w1540565633
+8InstructionAdd.v
+FInstructionAdd.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@instruction@add
+vInstructionStop
+R1
+!i10b 1
+!s100 eV[ZJ2;_`RzQ^F9>Az>1o1
+I29l7mF5zRN]ZXPeR;R<T^3
+R2
+R0
+w1540555885
+8InstructionStop.v
+FInstructionStop.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@instruction@stop
+vInstructionSub
+R1
+!i10b 1
+!s100 Y92MGF38YCQ5NBPKk]EUZ2
+IGBciH]`@bh[eC2iBKJHJe0
+R2
+R0
+w1540555600
+8InstructionSub.v
+FInstructionSub.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@instruction@sub
+vRAM
+R1
+!i10b 1
+!s100 a@=DCCZ??c2[fGgDdl]a41
+I^kWhWGJDYM3eRPh;5Z0Z?0
+R2
+R0
+w1541167880
+8RAM.v
+FRAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@r@a@m
+vtestbench_1
+R1
+!i10b 1
+!s100 dLA]9RR6=O9Olk7]7N8Zh1
+ISnggJcg;m8^_PlX[[eRgI1
+R2
+R0
+w1541167941
+8testbench_1.v
+Ftestbench_1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7

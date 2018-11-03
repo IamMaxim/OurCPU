@@ -1,0 +1,35 @@
+module RAM();
+  reg [1024 * 8: 0] ram;
+  reg [16: 0] stackPointer;
+  reg [16: 0] operationPointer;
+
+  function setStackPointer;
+  begin
+    input address;
+    stackPointer = address;
+  end
+  endfunction
+
+  function setOperationPointer;
+  begin
+    input address;
+    operationPointer = address;
+  end
+  endfunction
+
+  function popWordFromStack;
+  begin
+    reg [15: 0] result;
+    result = mem[stackPointer - 16];
+    stackPointer -= 16;
+    popWordFromStack = result;
+  end
+  endfunction
+
+  function putWordToStack;
+  begin
+
+  end
+  endfunction
+
+endmodule

@@ -1,0 +1,67 @@
+`define ADD 0
+`define SUB 1
+`define MUL 2
+`define DIV 3
+`define AND 4
+`define OR 5
+`define XOR 6
+`define NOT 7
+`define JMP 8
+`define JIF 9
+`define INC 10
+`define DEC 11
+`define EQ 12
+`define LE 13
+`define LEE 14
+`define GR 15
+`define GRE 16
+`define PUTB 17
+`define PUTW 18
+`define POP 19
+`define SB 20
+`define SW 21
+`define LB 22
+`define LW 23
+`define PUTARA 24
+`define PUTOPA 25
+`define POPARA 26
+`define POPOPA 27
+`define STOP 28
+`define PUTSP 29
+
+include "RAM.v"
+include "instructionAdd.v"
+include "instructionSub.v"
+
+module cpu(clk);
+  input clk;
+
+  reg [15 : 0] current_op_pointer;
+  reg [15 : 0] ar_pointer;
+  reg [63 : 0] current_op;
+
+  // indicates if we need to read next instuction (0) or execute currently stored one (1)
+  reg state;
+  // indicates if we had already loaded our code into RAM
+  reg initialized;
+
+  // init state to 0
+
+  RAM ram();
+
+  // TODO: load code from flash to RAM here
+
+  always @ (posedge clk && !state) begin
+
+  end
+
+  always @ (posedge clk && state) begin
+    case (current_op[63:57])
+      `ADD: instructionAdd.execute();
+      `SUB: instructionSub.execute();
+
+
+    endcase
+  end
+
+endmodule

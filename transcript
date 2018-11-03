@@ -1,0 +1,46 @@
+vsim work.testbench_1
+# vsim work.testbench_1 
+# Start time: 23:14:12 on Nov 03,2018
+# Loading work.testbench_1
+# Loading work.cpu
+# Loading work.RAM
+# Loading work.InstructionAdd
+# Loading work.InstructionSub
+# Loading work.InstructionStop
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_myhostname.so.2 : module was loaded at an absolute address.
+# Initializing CPU...
+# Adding instructions...
+# Putting 0000000000000000 into stack
+# Putting 0000000000000000 into stack
+# Putting 0000000000000000 into stack
+# Putting 0111000000000000 into stack
+# Putting 0000000000000010 into stack
+# Putting 0000000000000011 into stack
+# Done. Execution can start now
+# Fetching OP from RAM; addr:     0
+# Executing OP with opcode   0: 00000000000000000000000000000000
+# Executing InstructionAdd
+# Popped word: 0000000000000011
+# Popped word: 0000000000000010
+# First number:     2
+# Second number:     3
+# Putting 0000000000000101 into stack
+# Fetching OP from RAM; addr:    32
+# Executing OP with opcode  56: 01110000000000000000000000000000
+# executing instructionStop
+# ** Note: $stop    : InstructionStop.v(7)
+#    Time: 10 ps  Iteration: 3  Instance: /testbench_1/cpu
+# Break in NamedBeginStat block_1 at InstructionStop.v line 7
+quit -sim
+# End time: 23:14:50 on Nov 03,2018, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 10
