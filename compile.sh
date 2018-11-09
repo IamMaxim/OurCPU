@@ -4,5 +4,6 @@
 PATH=$PATH:/home/maxim/disk1/intelFPGA/18.0/modelsim_ase/bin
 
 vlib work
+vlog *.v
 
-vlog testbench_1.v
+vsim -c testbench_1 -do "run; exit"

@@ -1,9 +1,18 @@
 module InstructionMul;
+    task execute;
+        begin : block_1
+            reg [15:0] A, B;
 
-    input  [15:0] A, B;
-    output [15:0] mul;
-    reg [15:0]    mul;
-    always @(A or B) begin
-        mul = A * B;
-    end
+            $display("Executing InstructionMul");
+
+            ram.popWordFromStack(B);
+            ram.popWordFromStack(A);
+
+            $display("First number: %d", A);
+            $display("Second number: %d", B);
+
+            ram.putWordIntoStack(A * B);
+        end : block_1
+    endtask
+
 endmodule

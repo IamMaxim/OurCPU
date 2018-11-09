@@ -1,12 +1,18 @@
 module InstructionEq;
     task execute;
-        begin
+        begin : block_1
             reg [15:0] A, B;
-            B = ram.popWordFromStack();
-            A = ram.popWordFromStack();
 
-            execute = A == B ? 1'b1 : 1'b0;
-        end
+            $display("Executing InstructionAEq");
+
+            ram.popWordFromStack(B);
+            ram.popWordFromStack(A);
+
+            $display("First number: %d", A);
+            $display("Second number: %d", B);
+
+            ram.putWordIntoStack( A == B ? 1'b1 : 1'b0);
+        end : block_1
     endtask
 
 endmodule

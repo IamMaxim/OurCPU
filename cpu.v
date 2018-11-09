@@ -29,13 +29,6 @@
 `define STOP 28
 `define PUTSP 29
 
-// TODO: uncomment this
-`include "RAM.v"
-
-`include "InstructionAdd.v"
-`include "InstructionSub.v"
-`include "InstructionStop.v"
-
 module cpu(clk);
     input      clk;
 
@@ -56,21 +49,40 @@ module cpu(clk);
 
     // init state to 0
     // TODO: load code from flash to RAM here
+    always@(posedge clk && !initialized) begin
+        state = 0;
+        ram.stackPointer = 0;
+        current_op_pointer = 0;
+
+        // words should be added in inversed order according to RAM access model used in this CPU
+        $display("Adding instructions...");
+        // add instr
+        ram.putWordIntoStack(0);
+        ram.putWordIntoStack(0);
+
+        // stop instr
+        ram.putWordIntoStack(0);
+        ram.putWordIntoStack(16'b0111000000000000);
+
+        $display("Adding data...");
+        ram.putWordIntoStack(2);
+        ram.putWordIntoStack(3);
+
+        initialized = 1;
+        $display("Done. Execution can start now");
+    end
 
     always @(posedge clk && initialized && !state) begin
-        if (current_op_pointer == 256) begin
-            $display("Trying to stop execution");
-            initialized = 0;
-        end else begin
+        // if (current_op_pointer == 256) begin
+        //     $display("Trying to stop execution");
+        //     initialized = 0;
+        // end else begin
 
-            $display("Fetching OP from RAM; addr: %d", current_op_pointer);
-            current_op[31: 0] = ram.ram[current_op_pointer +: 31];
-            // current_op[23: 16] = ram.ram[current_op_pointer + 8 +: 8];
-            // current_op[15: 8] = ram.ram[current_op_pointer + 16 +: 8];
-            // current_op[7: 0] = ram.ram[current_op_pointer + 24 +: 8];
-
-            state = 1;
-        end
+        $display("Fetching OP from RAM; addr: %d", current_op_pointer);
+        current_op[31: 0] = ram.ram[current_op_pointer +: 31];
+        state = 1;
+        
+        // end
     end
 
     always @(posedge clk && initialized && state) begin

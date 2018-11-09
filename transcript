@@ -1,13 +1,12 @@
-vsim work.testbench_1
-# vsim work.testbench_1 
-# Start time: 23:14:12 on Nov 03,2018
+# vsim -c testbench_1 -do "run; exit" 
+# Start time: 14:47:34 on Nov 09,2018
 # Loading work.testbench_1
 # Loading work.cpu
 # Loading work.RAM
 # Loading work.InstructionAdd
 # Loading work.InstructionSub
 # Loading work.InstructionStop
-run
+# run
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.
@@ -19,11 +18,14 @@ run
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_myhostname.so.2 : module was loaded at an absolute address.
 # Initializing CPU...
+# Fetching OP from RAM; addr:     x
+# Executing OP with opcode   X: 0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # Adding instructions...
 # Putting 0000000000000000 into stack
 # Putting 0000000000000000 into stack
 # Putting 0000000000000000 into stack
 # Putting 0111000000000000 into stack
+# Adding data...
 # Putting 0000000000000010 into stack
 # Putting 0000000000000011 into stack
 # Done. Execution can start now
@@ -39,8 +41,9 @@ run
 # Executing OP with opcode  56: 01110000000000000000000000000000
 # executing instructionStop
 # ** Note: $stop    : InstructionStop.v(7)
-#    Time: 10 ps  Iteration: 3  Instance: /testbench_1/cpu
+#    Time: 10 ps  Iteration: 5  Instance: /testbench_1/cpu
 # Break in NamedBeginStat block_1 at InstructionStop.v line 7
-quit -sim
-# End time: 23:14:50 on Nov 03,2018, Elapsed time: 0:00:38
+# Stopped at InstructionStop.v line 7
+#  exit
+# End time: 14:47:35 on Nov 09,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 10
