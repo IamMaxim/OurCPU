@@ -4,14 +4,17 @@ module InstructionSw;
             reg [15:0] A;
             reg [15:0] B;
 
-            $display("Executing InstructionSw");
+            if (cpu.debugExecution) 
+                $display("Executing InstructionSw");
 
             cpu.ram.popWordFromStack(A);
             cpu.ram.popWordFromStack(B);
 
-            $display("Storing %d -> %d (in bytes)", A, B);
-            
+            if (cpu.debug) begin
+                $display("Storing %d -> %d (in bytes)", A, B);
+            end    
             cpu.ram.ram[B * 8 +: 16] = A;
+            
         end : block_1
     endtask
 

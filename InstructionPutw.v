@@ -4,8 +4,12 @@ module InstructionPutw;
         begin : block_1
             reg [15:0] A;
 
-            $display("Executing InstructionPutw");
-            $display("PuttingWord: %d", arg);
+            if (cpu.debugExecution)   
+                $display("Executing InstructionPutw");
+            if (cpu.debug) begin
+                $display("PuttingWord: %d", arg);
+            end
+
             cpu.ram.putWordIntoStack(arg);
         end : block_1
     endtask

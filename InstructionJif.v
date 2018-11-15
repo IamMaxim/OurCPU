@@ -3,17 +3,23 @@ module InstructionJif;
         begin : block_1
             reg [15:0] A;
 
-            $display("Executing InstructionJif");
+            if (cpu.debugExecution)
+                $display("Executing InstructionJif");
 
             cpu.ram.popWordFromStack(A);
 
-            $display("Value: %d", A);
-            
+            if (cpu.debug) begin    
+                $display("Value: %d", A);
+            end
+
             if (A != 0)
               begin
-                $display("Jumping to address: %d; in ops: %d", arg * 32, arg);
+                if (cpu.debug) begin
+                    $display("Jumping to address: %d; in ops: %d", arg * 32, arg);
+                end   
                 cpu.current_op_pointer = arg * 32;
-              end
+                
+            end
         
         end : block_1
     endtask
