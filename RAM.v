@@ -16,14 +16,14 @@ module RAM;
             // res[7: 0] = ram[stackPointer - 8 +: 8];
             res[0 +: 16] = ram[stackPointer - 16 +: 16];
             stackPointer = stackPointer - 16;
-            $display("Popped word: %b", res);
+            $display("Popped %d", res);
         end
     endtask
 
     task putWordIntoStack;
         input reg [15: 0] in;
         begin
-            $display("Putting %b into stack", in);
+            $display("Putting %d", in);
             // ram[stackPointer] = in;
             // ram[stackPointer +: 8] = in[7 +: 8];
             // ram[stackPointer + 8 +: 8] = in[0 +: 8];

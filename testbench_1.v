@@ -1,5 +1,3 @@
-`include "cpu.v"
-
 module testbench_1();
 
     reg clk;

@@ -6,12 +6,12 @@ module InstructionInc;
             $display("Executing InstructionInc");
 
            
-            ram.popWordFromStack(A);
+            cpu.ram.popWordFromStack(A);
 
             $display("First number: %d", A);
          
 
-            ram.putWordIntoStack(A + 1);
+            cpu.ram.putWordIntoStack(A + 1);
         end : block_1
     endtask
 

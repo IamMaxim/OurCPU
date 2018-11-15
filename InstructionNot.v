@@ -2,17 +2,15 @@
 module InstructionNot;
     task execute;
         begin : block_1
-            reg [15:0] A, B;
+            reg [15:0] A;
 
             $display("Executing InstructionNot");
 
-            ram.popWordFromStack(B);
-            ram.popWordFromStack(A);
+            cpu.ram.popWordFromStack(A);
 
-            $display("First number: %d", A);
-            $display("Second number: %d", B);
+            $display("Number: %d", A);
 
-            ram.putWordIntoStack(A >= 0 ? 1'b1 : 1'b0);
+            cpu.ram.putWordIntoStack(A == 1 ? 0 : 1);
         end : block_1
     endtask
 

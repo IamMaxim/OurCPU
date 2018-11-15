@@ -1,17 +1,11 @@
 module InstructionJmp;
-    task execute;
+    task execute(input reg[15: 0] arg);
         begin : block_1
-            reg [15:0] A, B;
-
             $display("Executing InstructionJmp");
 
-            ram.popWordFromStack(B);
-            ram.popWordFromStack(A);
+            $display("Address: %d; in ops: %d", arg * 32, arg);
 
-            $display("First number: %d", A);
-            $display("Second number: %d", B);
-
-            ram.putWordIntoStack(A + B);
+            cpu.current_op_pointer = arg * 32;
         end : block_1
     endtask
 

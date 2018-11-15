@@ -1,14 +1,11 @@
 module InstructionPop;
-    task execute;
+    task execute(input reg[15:0] arg);
         begin : block_1
-            reg [15:0] A;
-
             $display("Executing InstructionPop");
 
-            ram.popWordFromStack(A);
+            cpu.ram.stackPointer = cpu.ram.stackPointer - arg * 8;
 
-            $display("Given value: %d", A);
-
+            $display("Moved stack pointer back by %d; in bytes: %d", arg * 8, arg);
         end : block_1
     endtask
 

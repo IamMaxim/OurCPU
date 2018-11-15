@@ -6,10 +6,12 @@ module InstructionSw;
 
             $display("Executing InstructionSw");
 
-            ram.popWordFromStack(A);
-            ram.popWordFromStack(B);
+            cpu.ram.popWordFromStack(A);
+            cpu.ram.popWordFromStack(B);
+
+            $display("Storing %d -> %d (in bytes)", A, B);
             
-           ram.putWordIntoStack(A[15:8]);
+            cpu.ram.ram[B * 8 +: 16] = A;
         end : block_1
     endtask
 

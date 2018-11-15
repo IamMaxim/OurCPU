@@ -5,15 +5,13 @@ module InstructionLw;
 
             $display("Executing InstructionLw");
 
-            ram.popWordFromStack(A);
+            cpu.ram.popWordFromStack(A);
             
+            B = cpu.ram.ram[A * 8 +: 16];
             
-            // как вытащить переменную из стека по адресу????
+            $display("Loading word %d -> stack", B);          
 
-            $display("First number: %d", A);
-          
-
-            ram.putWordIntoStack(A);
+            cpu.ram.putWordIntoStack(B);
         end : block_1
     endtask
 

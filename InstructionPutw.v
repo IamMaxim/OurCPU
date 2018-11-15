@@ -1,18 +1,12 @@
 
 module InstructionPutw;
-    task execute;
+    task execute(input reg[15: 0] arg);
         begin : block_1
             reg [15:0] A;
 
             $display("Executing InstructionPutw");
-
-           
-            ram.popWordFromStack(A);
-
-            $display("Word: %d", A);
-            
-
-            ram.putWordIntoStack(A );
+            $display("PuttingWord: %d", arg);
+            cpu.ram.putWordIntoStack(arg);
         end : block_1
     endtask
 

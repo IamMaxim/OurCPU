@@ -5,13 +5,13 @@ module InstructionXor;
 
             $display("Executing InstructionXor");
 
-            ram.popWordFromStack(B);
-            ram.popWordFromStack(A);
+            cpu.ram.popWordFromStack(B);
+            cpu.ram.popWordFromStack(A);
 
             $display("First number: %d", A);
             $display("Second number: %d", B);
 
-            ram.putWordIntoStack(A ^ B);
+            cpu.ram.putWordIntoStack(A ^ B);
         end : block_1
     endtask
 
