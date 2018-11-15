@@ -3,14 +3,17 @@ module InstructionAdd;
         begin : block_1
             reg [15:0] A, B;
 
-            $display("Executing InstructionAdd");
+            if (cpu.debugExecution)
+                $display("Executing InstructionAdd");
 
             cpu.ram.popWordFromStack(B);
             cpu.ram.popWordFromStack(A);
 
-            $display("First number: %d", A);
-            $display("Second number: %d", B);
-            $display("Result: %d", A + B);
+            if (cpu.debug) begin
+                $display("First number: %d", A);
+                $display("Second number: %d", B);
+                $display("Result: %d", A + B);
+            end
 
             cpu.ram.putWordIntoStack(A + B);
         end : block_1

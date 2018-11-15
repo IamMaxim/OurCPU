@@ -43,6 +43,10 @@ module cpu(clk);
     // indicates if we had already loaded our code into RAM
     reg        initialized = 0;
 
+    reg        debug = 0;
+    reg        debugExecution = 0;
+    reg        debugStackOperations = 0;
+
     InstructionAdd instructionAdd ();
     InstructionSub instructionSub ();
     InstructionMul instructionMul ();
@@ -78,9 +82,11 @@ module cpu(clk);
     always@(posedge clk && !initialized) begin
         ram.stackPointer = 0;
 
-        // words should be added in inversed word-order according to RAM access model used in this CPU
-        $display("Adding instructions...");
+        if (debug)
+            $display("Adding instructions...");
 
+// words should be added in inversed word-order according to RAM access model used in this CPU
+// >>> INSERT YOUR PROGRAM BINARY CODE HERE <<<
 begin
 
         ram.putWordIntoStack(185);
@@ -480,26 +486,20 @@ end
         ar_pointer = 0;
         initialized = 1;
         
-        $display("Initial stack pointer: %d; in bytes: %d", ram.stackPointer, ram.stackPointer / 8);
-        $display("Done. Execution can start now");
+        if (debug) begin
+            $display("Initial stack pointer: %d; in bytes: %d", ram.stackPointer, ram.stackPointer / 8);
+            $display("Done. Execution can start now");
+        end
     end
 
     always @(posedge clk && initialized && !state) begin
-        // if (current_op_pointer == 256) begin
-        //     $display("Trying to stop execution");
-        //     initialized = 0;
-        // end else begin
-
-        $display("Fetching OP from RAM; addr: %d; op number: %d", current_op_pointer, current_op_pointer / 32);
+        if (debug)
+            $display("Fetching OP from RAM; addr: %d; op number: %d", current_op_pointer, current_op_pointer / 32);
         current_op = ram.ram[current_op_pointer +: 32];
         state = 1;
-        
-        // end
     end
 
     always @(posedge clk && initialized && state) begin
-        // $display("Executing OP with opcode %d: %b", current_op[31: 26], current_op);
-        // $display("Executing OP with data %d", current_op[15:0]);
         case (current_op[31:26])
             `ADD: instructionAdd.execute();
             `SUB: instructionSub.execute();

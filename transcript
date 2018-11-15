@@ -1,5 +1,5 @@
 # vsim -c testbench_1 -do "run; exit" 
-# Start time: 16:48:32 on Nov 14,2018
+# Start time: 20:23:59 on Nov 15,2018
 # Loading work.testbench_1
 # Loading work.cpu
 # Loading work.RAM
@@ -44,7 +44,6 @@
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_myhostname.so.2 : module was loaded at an absolute address.
 # Initializing CPU...
-# Adding instructions...
 # Putting   185
 # Putting  8192
 # Putting     0
@@ -435,32 +434,23 @@
 # Putting  8192
 # Putting     0
 # Putting 28672
-# Initial stack pointer:  6240; in bytes:        780
-# Done. Execution can start now
-# Fetching OP from RAM; addr:     0; op number:          0
 # Executing InstructionJmp
 # Address:       5920; in ops:   185
-# Fetching OP from RAM; addr:  5952; op number:        186
 # Executing InstructionPutw
 # PuttingWord:   193
 # Putting   193
-# Fetching OP from RAM; addr:  5984; op number:        187
 # Executing InstructionPutara >          0
 # AR address:     0; in bytes:          0
 # Putting     0
-# Fetching OP from RAM; addr:  6016; op number:        188
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  6048; op number:        189
 # Executing InstructionPutsp
 # Stack pointer:  6288; in bytes:        786
 # Putting   786
-# Fetching OP from RAM; addr:  6080; op number:        190
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  6112; op number:        191
 # Executing InstructionSub
 # Popped     6
 # Popped   786
@@ -468,58 +458,41 @@
 # Second number:     6
 # Result:   780
 # Putting   780
-# Fetching OP from RAM; addr:  6144; op number:        192
 # Executing InstructionPopara
 # Popped   780
 # PoppedARA  6240; in bytes:        780
-# Fetching OP from RAM; addr:  6176; op number:        193
 # Executing InstructionJmp
 # Address:       3264; in ops:   102
-# Fetching OP from RAM; addr:  3296; op number:        103
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  3328; op number:        104
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  3360; op number:        105
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  3392; op number:        106
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  3424; op number:        107
 # Executing InstructionPutw
 # PuttingWord:   129
 # Putting   129
-# Fetching OP from RAM; addr:  3456; op number:        108
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  3488; op number:        109
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  3520; op number:        110
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  3552; op number:        111
 # Executing InstructionPutsp
 # Stack pointer:  6384; in bytes:        798
 # Putting   798
-# Fetching OP from RAM; addr:  3584; op number:        112
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  3616; op number:        113
 # Executing InstructionSub
 # Popped    10
 # Popped   798
@@ -527,36 +500,25 @@
 # Second number:    10
 # Result:   788
 # Putting   788
-# Fetching OP from RAM; addr:  3648; op number:        114
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  3680; op number:        115
-# Executing InstructionAdd
 # Popped     6
 # Popped   788
-# First number:   788
-# Second number:     6
-# Result:   794
 # Putting   794
-# Fetching OP from RAM; addr:  3712; op number:        116
 # Executing InstructionPutw
 # PuttingWord:     1
 # Putting     1
-# Fetching OP from RAM; addr:  3744; op number:        117
 # Executing InstructionSw
 # Popped     1
 # Popped   794
 # Storing     1 ->   794 (in bytes)
-# Fetching OP from RAM; addr:  3776; op number:        118
 # Executing InstructionPutsp
 # Stack pointer:  6384; in bytes:        798
 # Putting   798
-# Fetching OP from RAM; addr:  3808; op number:        119
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  3840; op number:        120
 # Executing InstructionSub
 # Popped    10
 # Popped   798
@@ -564,36 +526,25 @@
 # Second number:    10
 # Result:   788
 # Putting   788
-# Fetching OP from RAM; addr:  3872; op number:        121
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  3904; op number:        122
-# Executing InstructionAdd
 # Popped     8
 # Popped   788
-# First number:   788
-# Second number:     8
-# Result:   796
 # Putting   796
-# Fetching OP from RAM; addr:  3936; op number:        123
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  3968; op number:        124
 # Executing InstructionSw
 # Popped    10
 # Popped   796
 # Storing    10 ->   796 (in bytes)
-# Fetching OP from RAM; addr:  4000; op number:        125
 # Executing InstructionPutsp
 # Stack pointer:  6384; in bytes:        798
 # Putting   798
-# Fetching OP from RAM; addr:  4032; op number:        126
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  4064; op number:        127
 # Executing InstructionSub
 # Popped    10
 # Popped   798
@@ -601,34 +552,26 @@
 # Second number:    10
 # Result:   788
 # Putting   788
-# Fetching OP from RAM; addr:  4096; op number:        128
 # Executing InstructionPopara
 # Popped   788
 # PoppedARA  6304; in bytes:        788
-# Fetching OP from RAM; addr:  4128; op number:        129
 # Executing InstructionJmp
 # Address:        256; in ops:     8
-# Fetching OP from RAM; addr:   288; op number:          9
 # Executing InstructionPutw
 # PuttingWord:    26
 # Putting    26
-# Fetching OP from RAM; addr:   320; op number:         10
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:   352; op number:         11
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:   384; op number:         12
 # Executing InstructionPutsp
 # Stack pointer:  6432; in bytes:        804
 # Putting   804
-# Fetching OP from RAM; addr:   416; op number:         13
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   448; op number:         14
 # Executing InstructionSub
 # Popped     6
 # Popped   804
@@ -636,53 +579,35 @@
 # Second number:     6
 # Result:   798
 # Putting   798
-# Fetching OP from RAM; addr:   480; op number:         15
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:   512; op number:         16
-# Executing InstructionAdd
 # Popped     4
 # Popped   798
-# First number:   798
-# Second number:     4
-# Result:   802
 # Putting   802
-# Fetching OP from RAM; addr:   544; op number:         17
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:   576; op number:         18
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   608; op number:         19
-# Executing InstructionAdd
 # Popped     6
 # Popped   788
-# First number:   788
-# Second number:     6
-# Result:   794
 # Putting   794
-# Fetching OP from RAM; addr:   640; op number:         20
 # Executing InstructionLw
 # Popped   794
 # Loading word     1 -> stack
 # Putting     1
-# Fetching OP from RAM; addr:   672; op number:         21
 # Executing InstructionSw
 # Popped     1
 # Popped   802
 # Storing     1 ->   802 (in bytes)
-# Fetching OP from RAM; addr:   704; op number:         22
 # Executing InstructionPutsp
 # Stack pointer:  6432; in bytes:        804
 # Putting   804
-# Fetching OP from RAM; addr:   736; op number:         23
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   768; op number:         24
 # Executing InstructionSub
 # Popped     6
 # Popped   804
@@ -690,70 +615,50 @@
 # Second number:     6
 # Result:   798
 # Putting   798
-# Fetching OP from RAM; addr:   800; op number:         25
 # Executing InstructionPopara
 # Popped   798
 # PoppedARA  6384; in bytes:        798
-# Fetching OP from RAM; addr:   832; op number:         26
 # Executing InstructionJmp
 # Address:          0; in ops:     0
-# Fetching OP from RAM; addr:    32; op number:          1
 # Executing InstructionPutara >        798
 # AR address:  6384; in bytes:        798
 # Putting   798
-# Fetching OP from RAM; addr:    64; op number:          2
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:    96; op number:          3
-# Executing InstructionAdd
 # Popped     4
 # Popped   798
-# First number:   798
-# Second number:     4
-# Result:   802
 # Putting   802
-# Fetching OP from RAM; addr:   128; op number:          4
 # Executing InstructionLw
 # Popped   802
 # Loading word     1 -> stack
 # Putting     1
-# Fetching OP from RAM; addr:   160; op number:          5
 # Executing InstructionPrintWord
 # Popped     1
 # Word:     1
-# Fetching OP from RAM; addr:   192; op number:          6
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:   224; op number:          7
 # Executing InstructionPopara
 # Popped   788
 # PoppedARA  6304; in bytes:        788
-# Fetching OP from RAM; addr:   256; op number:          8
 # Executing InstructionPopopa
 # Popped    26
 # PoppedOPA   832; in bytes:         26
-# Fetching OP from RAM; addr:   864; op number:         27
 # Executing InstructionPutw
 # PuttingWord:    44
 # Putting    44
-# Fetching OP from RAM; addr:   896; op number:         28
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:   928; op number:         29
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:   960; op number:         30
 # Executing InstructionPutsp
 # Stack pointer:  6432; in bytes:        804
 # Putting   804
-# Fetching OP from RAM; addr:   992; op number:         31
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1024; op number:         32
 # Executing InstructionSub
 # Popped     6
 # Popped   804
@@ -761,53 +666,35 @@
 # Second number:     6
 # Result:   798
 # Putting   798
-# Fetching OP from RAM; addr:  1056; op number:         33
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  1088; op number:         34
-# Executing InstructionAdd
 # Popped     4
 # Popped   798
-# First number:   798
-# Second number:     4
-# Result:   802
 # Putting   802
-# Fetching OP from RAM; addr:  1120; op number:         35
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  1152; op number:         36
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  1184; op number:         37
-# Executing InstructionAdd
 # Popped     8
 # Popped   788
-# First number:   788
-# Second number:     8
-# Result:   796
 # Putting   796
-# Fetching OP from RAM; addr:  1216; op number:         38
 # Executing InstructionLw
 # Popped   796
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  1248; op number:         39
 # Executing InstructionSw
 # Popped    10
 # Popped   802
 # Storing    10 ->   802 (in bytes)
-# Fetching OP from RAM; addr:  1280; op number:         40
 # Executing InstructionPutsp
 # Stack pointer:  6432; in bytes:        804
 # Putting   804
-# Fetching OP from RAM; addr:  1312; op number:         41
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1344; op number:         42
 # Executing InstructionSub
 # Popped     6
 # Popped   804
@@ -815,124 +702,89 @@
 # Second number:     6
 # Result:   798
 # Putting   798
-# Fetching OP from RAM; addr:  1376; op number:         43
 # Executing InstructionPopara
 # Popped   798
 # PoppedARA  6384; in bytes:        798
-# Fetching OP from RAM; addr:  1408; op number:         44
 # Executing InstructionJmp
 # Address:          0; in ops:     0
-# Fetching OP from RAM; addr:    32; op number:          1
 # Executing InstructionPutara >        798
 # AR address:  6384; in bytes:        798
 # Putting   798
-# Fetching OP from RAM; addr:    64; op number:          2
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:    96; op number:          3
-# Executing InstructionAdd
 # Popped     4
 # Popped   798
-# First number:   798
-# Second number:     4
-# Result:   802
 # Putting   802
-# Fetching OP from RAM; addr:   128; op number:          4
 # Executing InstructionLw
 # Popped   802
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:   160; op number:          5
 # Executing InstructionPrintWord
 # Popped    10
 # Word:    10
-# Fetching OP from RAM; addr:   192; op number:          6
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:   224; op number:          7
 # Executing InstructionPopara
 # Popped   788
 # PoppedARA  6304; in bytes:        788
-# Fetching OP from RAM; addr:   256; op number:          8
 # Executing InstructionPopopa
 # Popped    44
 # PoppedOPA  1408; in bytes:         44
-# Fetching OP from RAM; addr:  1440; op number:         45
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  1472; op number:         46
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1504; op number:         47
-# Executing InstructionAdd
 # Popped     6
 # Popped   788
-# First number:   788
-# Second number:     6
-# Result:   794
 # Putting   794
-# Fetching OP from RAM; addr:  1536; op number:         48
 # Executing InstructionLw
 # Popped   794
 # Loading word     1 -> stack
 # Putting     1
-# Fetching OP from RAM; addr:  1568; op number:         49
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  1600; op number:         50
 # Executing InstructionEq
 # Popped     0
 # Popped     1
 # First number:     1
 # Second number:     0
 # Putting     0
-# Fetching OP from RAM; addr:  1632; op number:         51
 # Executing InstructionNot
 # Popped     0
 # Number:     0
 # Putting     1
-# Fetching OP from RAM; addr:  1664; op number:         52
 # Executing InstructionJif
 # Popped     1
 # Value:     1
 # Jumping to address:       1984; in ops:    62
-# Fetching OP from RAM; addr:  2016; op number:         63
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  2048; op number:         64
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  2080; op number:         65
 # Executing InstructionPutw
 # PuttingWord:    95
 # Putting    95
-# Fetching OP from RAM; addr:  2112; op number:         66
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  2144; op number:         67
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  2176; op number:         68
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  2208; op number:         69
 # Executing InstructionPutsp
 # Stack pointer:  6480; in bytes:        810
 # Putting   810
-# Fetching OP from RAM; addr:  2240; op number:         70
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  2272; op number:         71
 # Executing InstructionSub
 # Popped    10
 # Popped   810
@@ -940,44 +792,28 @@
 # Second number:    10
 # Result:   800
 # Putting   800
-# Fetching OP from RAM; addr:  2304; op number:         72
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  2336; op number:         73
-# Executing InstructionAdd
 # Popped     6
 # Popped   800
-# First number:   800
-# Second number:     6
-# Result:   806
 # Putting   806
-# Fetching OP from RAM; addr:  2368; op number:         74
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  2400; op number:         75
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  2432; op number:         76
-# Executing InstructionAdd
 # Popped     6
 # Popped   788
-# First number:   788
-# Second number:     6
-# Result:   794
 # Putting   794
-# Fetching OP from RAM; addr:  2464; op number:         77
 # Executing InstructionLw
 # Popped   794
 # Loading word     1 -> stack
 # Putting     1
-# Fetching OP from RAM; addr:  2496; op number:         78
 # Executing InstructionPutw
 # PuttingWord:     1
 # Putting     1
-# Fetching OP from RAM; addr:  2528; op number:         79
 # Executing InstructionSub
 # Popped     1
 # Popped     1
@@ -985,20 +821,16 @@
 # Second number:     1
 # Result:     0
 # Putting     0
-# Fetching OP from RAM; addr:  2560; op number:         80
 # Executing InstructionSw
 # Popped     0
 # Popped   806
 # Storing     0 ->   806 (in bytes)
-# Fetching OP from RAM; addr:  2592; op number:         81
 # Executing InstructionPutsp
 # Stack pointer:  6480; in bytes:        810
 # Putting   810
-# Fetching OP from RAM; addr:  2624; op number:         82
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  2656; op number:         83
 # Executing InstructionSub
 # Popped    10
 # Popped   810
@@ -1006,53 +838,35 @@
 # Second number:    10
 # Result:   800
 # Putting   800
-# Fetching OP from RAM; addr:  2688; op number:         84
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  2720; op number:         85
-# Executing InstructionAdd
 # Popped     8
 # Popped   800
-# First number:   800
-# Second number:     8
-# Result:   808
 # Putting   808
-# Fetching OP from RAM; addr:  2752; op number:         86
 # Executing InstructionPutara >        788
 # AR address:  6304; in bytes:        788
 # Putting   788
-# Fetching OP from RAM; addr:  2784; op number:         87
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  2816; op number:         88
-# Executing InstructionAdd
 # Popped     8
 # Popped   788
-# First number:   788
-# Second number:     8
-# Result:   796
 # Putting   796
-# Fetching OP from RAM; addr:  2848; op number:         89
 # Executing InstructionLw
 # Popped   796
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  2880; op number:         90
 # Executing InstructionSw
 # Popped    10
 # Popped   808
 # Storing    10 ->   808 (in bytes)
-# Fetching OP from RAM; addr:  2912; op number:         91
 # Executing InstructionPutsp
 # Stack pointer:  6480; in bytes:        810
 # Putting   810
-# Fetching OP from RAM; addr:  2944; op number:         92
 # Executing InstructionPutw
 # PuttingWord:    10
 # Putting    10
-# Fetching OP from RAM; addr:  2976; op number:         93
 # Executing InstructionSub
 # Popped    10
 # Popped   810
@@ -1060,34 +874,26 @@
 # Second number:    10
 # Result:   800
 # Putting   800
-# Fetching OP from RAM; addr:  3008; op number:         94
 # Executing InstructionPopara
 # Popped   800
 # PoppedARA  6400; in bytes:        800
-# Fetching OP from RAM; addr:  3040; op number:         95
 # Executing InstructionJmp
 # Address:        256; in ops:     8
-# Fetching OP from RAM; addr:   288; op number:          9
 # Executing InstructionPutw
 # PuttingWord:    26
 # Putting    26
-# Fetching OP from RAM; addr:   320; op number:         10
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:   352; op number:         11
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:   384; op number:         12
 # Executing InstructionPutsp
 # Stack pointer:  6528; in bytes:        816
 # Putting   816
-# Fetching OP from RAM; addr:   416; op number:         13
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   448; op number:         14
 # Executing InstructionSub
 # Popped     6
 # Popped   816
@@ -1095,53 +901,35 @@
 # Second number:     6
 # Result:   810
 # Putting   810
-# Fetching OP from RAM; addr:   480; op number:         15
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:   512; op number:         16
-# Executing InstructionAdd
 # Popped     4
 # Popped   810
-# First number:   810
-# Second number:     4
-# Result:   814
 # Putting   814
-# Fetching OP from RAM; addr:   544; op number:         17
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:   576; op number:         18
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   608; op number:         19
-# Executing InstructionAdd
 # Popped     6
 # Popped   800
-# First number:   800
-# Second number:     6
-# Result:   806
 # Putting   806
-# Fetching OP from RAM; addr:   640; op number:         20
 # Executing InstructionLw
 # Popped   806
 # Loading word     0 -> stack
 # Putting     0
-# Fetching OP from RAM; addr:   672; op number:         21
 # Executing InstructionSw
 # Popped     0
 # Popped   814
 # Storing     0 ->   814 (in bytes)
-# Fetching OP from RAM; addr:   704; op number:         22
 # Executing InstructionPutsp
 # Stack pointer:  6528; in bytes:        816
 # Putting   816
-# Fetching OP from RAM; addr:   736; op number:         23
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:   768; op number:         24
 # Executing InstructionSub
 # Popped     6
 # Popped   816
@@ -1149,70 +937,50 @@
 # Second number:     6
 # Result:   810
 # Putting   810
-# Fetching OP from RAM; addr:   800; op number:         25
 # Executing InstructionPopara
 # Popped   810
 # PoppedARA  6480; in bytes:        810
-# Fetching OP from RAM; addr:   832; op number:         26
 # Executing InstructionJmp
 # Address:          0; in ops:     0
-# Fetching OP from RAM; addr:    32; op number:          1
 # Executing InstructionPutara >        810
 # AR address:  6480; in bytes:        810
 # Putting   810
-# Fetching OP from RAM; addr:    64; op number:          2
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:    96; op number:          3
-# Executing InstructionAdd
 # Popped     4
 # Popped   810
-# First number:   810
-# Second number:     4
-# Result:   814
 # Putting   814
-# Fetching OP from RAM; addr:   128; op number:          4
 # Executing InstructionLw
 # Popped   814
 # Loading word     0 -> stack
 # Putting     0
-# Fetching OP from RAM; addr:   160; op number:          5
 # Executing InstructionPrintWord
 # Popped     0
 # Word:     0
-# Fetching OP from RAM; addr:   192; op number:          6
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:   224; op number:          7
 # Executing InstructionPopara
 # Popped   800
 # PoppedARA  6400; in bytes:        800
-# Fetching OP from RAM; addr:   256; op number:          8
 # Executing InstructionPopopa
 # Popped    26
 # PoppedOPA   832; in bytes:         26
-# Fetching OP from RAM; addr:   864; op number:         27
 # Executing InstructionPutw
 # PuttingWord:    44
 # Putting    44
-# Fetching OP from RAM; addr:   896; op number:         28
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:   928; op number:         29
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:   960; op number:         30
 # Executing InstructionPutsp
 # Stack pointer:  6528; in bytes:        816
 # Putting   816
-# Fetching OP from RAM; addr:   992; op number:         31
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1024; op number:         32
 # Executing InstructionSub
 # Popped     6
 # Popped   816
@@ -1220,53 +988,35 @@
 # Second number:     6
 # Result:   810
 # Putting   810
-# Fetching OP from RAM; addr:  1056; op number:         33
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  1088; op number:         34
-# Executing InstructionAdd
 # Popped     4
 # Popped   810
-# First number:   810
-# Second number:     4
-# Result:   814
 # Putting   814
-# Fetching OP from RAM; addr:  1120; op number:         35
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:  1152; op number:         36
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  1184; op number:         37
-# Executing InstructionAdd
 # Popped     8
 # Popped   800
-# First number:   800
-# Second number:     8
-# Result:   808
 # Putting   808
-# Fetching OP from RAM; addr:  1216; op number:         38
 # Executing InstructionLw
 # Popped   808
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  1248; op number:         39
 # Executing InstructionSw
 # Popped    10
 # Popped   814
 # Storing    10 ->   814 (in bytes)
-# Fetching OP from RAM; addr:  1280; op number:         40
 # Executing InstructionPutsp
 # Stack pointer:  6528; in bytes:        816
 # Putting   816
-# Fetching OP from RAM; addr:  1312; op number:         41
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1344; op number:         42
 # Executing InstructionSub
 # Popped     6
 # Popped   816
@@ -1274,288 +1024,199 @@
 # Second number:     6
 # Result:   810
 # Putting   810
-# Fetching OP from RAM; addr:  1376; op number:         43
 # Executing InstructionPopara
 # Popped   810
 # PoppedARA  6480; in bytes:        810
-# Fetching OP from RAM; addr:  1408; op number:         44
 # Executing InstructionJmp
 # Address:          0; in ops:     0
-# Fetching OP from RAM; addr:    32; op number:          1
 # Executing InstructionPutara >        810
 # AR address:  6480; in bytes:        810
 # Putting   810
-# Fetching OP from RAM; addr:    64; op number:          2
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:    96; op number:          3
-# Executing InstructionAdd
 # Popped     4
 # Popped   810
-# First number:   810
-# Second number:     4
-# Result:   814
 # Putting   814
-# Fetching OP from RAM; addr:   128; op number:          4
 # Executing InstructionLw
 # Popped   814
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:   160; op number:          5
 # Executing InstructionPrintWord
 # Popped    10
 # Word:    10
-# Fetching OP from RAM; addr:   192; op number:          6
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:   224; op number:          7
 # Executing InstructionPopara
 # Popped   800
 # PoppedARA  6400; in bytes:        800
-# Fetching OP from RAM; addr:   256; op number:          8
 # Executing InstructionPopopa
 # Popped    44
 # PoppedOPA  1408; in bytes:         44
-# Fetching OP from RAM; addr:  1440; op number:         45
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:  1472; op number:         46
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  1504; op number:         47
-# Executing InstructionAdd
 # Popped     6
 # Popped   800
-# First number:   800
-# Second number:     6
-# Result:   806
 # Putting   806
-# Fetching OP from RAM; addr:  1536; op number:         48
 # Executing InstructionLw
 # Popped   806
 # Loading word     0 -> stack
 # Putting     0
-# Fetching OP from RAM; addr:  1568; op number:         49
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  1600; op number:         50
 # Executing InstructionEq
 # Popped     0
 # Popped     0
 # First number:     0
 # Second number:     0
 # Putting     1
-# Fetching OP from RAM; addr:  1632; op number:         51
 # Executing InstructionNot
 # Popped     1
 # Number:     1
 # Putting     0
-# Fetching OP from RAM; addr:  1664; op number:         52
 # Executing InstructionJif
 # Popped     0
 # Value:     0
-# Fetching OP from RAM; addr:  1696; op number:         53
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:  1728; op number:         54
 # Executing InstructionPutara >        800
 # AR address:  6400; in bytes:        800
 # Putting   800
-# Fetching OP from RAM; addr:  1760; op number:         55
 # Executing InstructionPutw
 # PuttingWord:     8
 # Putting     8
-# Fetching OP from RAM; addr:  1792; op number:         56
-# Executing InstructionAdd
 # Popped     8
 # Popped   800
-# First number:   800
-# Second number:     8
-# Result:   808
 # Putting   808
-# Fetching OP from RAM; addr:  1824; op number:         57
 # Executing InstructionLw
 # Popped   808
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  1856; op number:         58
 # Executing InstructionSw
 # Popped    10
 # Popped   800
 # Storing    10 ->   800 (in bytes)
-# Fetching OP from RAM; addr:  1888; op number:         59
 # Executing InstructionPop
 # Moved stack pointer back by         32; in bytes:     4
-# Fetching OP from RAM; addr:  1920; op number:         60
 # Executing InstructionPopara
 # Popped   788
 # PoppedARA  6304; in bytes:        788
-# Fetching OP from RAM; addr:  1952; op number:         61
 # Executing InstructionPopopa
 # Popped    95
 # PoppedOPA  3040; in bytes:         95
-# Fetching OP from RAM; addr:  3072; op number:         96
 # Executing InstructionSw
 # Popped    10
 # Popped   788
 # Storing    10 ->   788 (in bytes)
-# Fetching OP from RAM; addr:  3104; op number:         97
 # Executing InstructionPop
 # Moved stack pointer back by         32; in bytes:     4
-# Fetching OP from RAM; addr:  3136; op number:         98
 # Executing InstructionPopara
 # Popped   780
 # PoppedARA  6240; in bytes:        780
-# Fetching OP from RAM; addr:  3168; op number:         99
 # Executing InstructionPopopa
 # Popped   129
 # PoppedOPA  4128; in bytes:        129
-# Fetching OP from RAM; addr:  4160; op number:        130
 # Executing InstructionSw
 # Popped    10
 # Popped   784
 # Storing    10 ->   784 (in bytes)
-# Fetching OP from RAM; addr:  4192; op number:        131
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  4224; op number:        132
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  4256; op number:        133
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  4288; op number:        134
 # Executing InstructionLw
 # Popped   784
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  4320; op number:        135
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:  4352; op number:        136
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  4384; op number:        137
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  4416; op number:        138
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  4448; op number:        139
 # Executing InstructionLw
 # Popped   784
 # Loading word    10 -> stack
 # Putting    10
-# Fetching OP from RAM; addr:  4480; op number:        140
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  4512; op number:        141
 # Executing InstructionEq
 # Popped     0
 # Popped    10
 # First number:    10
 # Second number:     0
 # Putting     0
-# Fetching OP from RAM; addr:  4544; op number:        142
 # Executing InstructionNot
 # Popped     0
 # Number:     0
 # Putting     1
-# Fetching OP from RAM; addr:  4576; op number:        143
 # Executing InstructionJif
 # Popped     1
 # Value:     1
 # Jumping to address:       4928; in ops:   154
-# Fetching OP from RAM; addr:  4960; op number:        155
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  4992; op number:        156
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  5024; op number:        157
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  5056; op number:        158
 # Executing InstructionPutw
 # PuttingWord:     2
 # Putting     2
-# Fetching OP from RAM; addr:  5088; op number:        159
 # Executing InstructionSw
 # Popped     2
 # Popped   784
 # Storing     2 ->   784 (in bytes)
-# Fetching OP from RAM; addr:  5120; op number:        160
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  5152; op number:        161
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  5184; op number:        162
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  5216; op number:        163
 # Executing InstructionLw
 # Popped   784
 # Loading word     2 -> stack
 # Putting     2
-# Fetching OP from RAM; addr:  5248; op number:        164
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:  5280; op number:        165
 # Executing InstructionPutw
 # PuttingWord:   182
 # Putting   182
-# Fetching OP from RAM; addr:  5312; op number:        166
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  5344; op number:        167
 # Executing InstructionPutw
 # PuttingWord:     0
 # Putting     0
-# Fetching OP from RAM; addr:  5376; op number:        168
 # Executing InstructionPutsp
 # Stack pointer:  6336; in bytes:        792
 # Putting   792
-# Fetching OP from RAM; addr:  5408; op number:        169
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  5440; op number:        170
 # Executing InstructionSub
 # Popped     6
 # Popped   792
@@ -1563,53 +1224,35 @@
 # Second number:     6
 # Result:   786
 # Putting   786
-# Fetching OP from RAM; addr:  5472; op number:        171
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  5504; op number:        172
-# Executing InstructionAdd
 # Popped     4
 # Popped   786
-# First number:   786
-# Second number:     4
-# Result:   790
 # Putting   790
-# Fetching OP from RAM; addr:  5536; op number:        173
 # Executing InstructionPutara >        780
 # AR address:  6240; in bytes:        780
 # Putting   780
-# Fetching OP from RAM; addr:  5568; op number:        174
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:  5600; op number:        175
-# Executing InstructionAdd
 # Popped     4
 # Popped   780
-# First number:   780
-# Second number:     4
-# Result:   784
 # Putting   784
-# Fetching OP from RAM; addr:  5632; op number:        176
 # Executing InstructionLw
 # Popped   784
 # Loading word     2 -> stack
 # Putting     2
-# Fetching OP from RAM; addr:  5664; op number:        177
 # Executing InstructionSw
 # Popped     2
 # Popped   790
 # Storing     2 ->   790 (in bytes)
-# Fetching OP from RAM; addr:  5696; op number:        178
 # Executing InstructionPutsp
 # Stack pointer:  6336; in bytes:        792
 # Putting   792
-# Fetching OP from RAM; addr:  5728; op number:        179
 # Executing InstructionPutw
 # PuttingWord:     6
 # Putting     6
-# Fetching OP from RAM; addr:  5760; op number:        180
 # Executing InstructionSub
 # Popped     6
 # Popped   792
@@ -1617,66 +1260,48 @@
 # Second number:     6
 # Result:   786
 # Putting   786
-# Fetching OP from RAM; addr:  5792; op number:        181
 # Executing InstructionPopara
 # Popped   786
 # PoppedARA  6288; in bytes:        786
-# Fetching OP from RAM; addr:  5824; op number:        182
 # Executing InstructionJmp
 # Address:          0; in ops:     0
-# Fetching OP from RAM; addr:    32; op number:          1
 # Executing InstructionPutara >        786
 # AR address:  6288; in bytes:        786
 # Putting   786
-# Fetching OP from RAM; addr:    64; op number:          2
 # Executing InstructionPutw
 # PuttingWord:     4
 # Putting     4
-# Fetching OP from RAM; addr:    96; op number:          3
-# Executing InstructionAdd
 # Popped     4
 # Popped   786
-# First number:   786
-# Second number:     4
-# Result:   790
 # Putting   790
-# Fetching OP from RAM; addr:   128; op number:          4
 # Executing InstructionLw
 # Popped   790
 # Loading word     2 -> stack
 # Putting     2
-# Fetching OP from RAM; addr:   160; op number:          5
 # Executing InstructionPrintWord
 # Popped     2
 # Word:     2
-# Fetching OP from RAM; addr:   192; op number:          6
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:   224; op number:          7
 # Executing InstructionPopara
 # Popped   780
 # PoppedARA  6240; in bytes:        780
-# Fetching OP from RAM; addr:   256; op number:          8
 # Executing InstructionPopopa
 # Popped   182
 # PoppedOPA  5824; in bytes:        182
-# Fetching OP from RAM; addr:  5856; op number:        183
 # Executing InstructionPop
 # Moved stack pointer back by         16; in bytes:     2
-# Fetching OP from RAM; addr:  5888; op number:        184
 # Executing InstructionPopara
 # Popped     0
 # PoppedARA     0; in bytes:          0
-# Fetching OP from RAM; addr:  5920; op number:        185
 # Executing InstructionPopopa
 # Popped   193
 # PoppedOPA  6176; in bytes:        193
-# Fetching OP from RAM; addr:  6208; op number:        194
 # executing instructionStop
 # ** Note: $stop    : InstructionStop.v(7)
 #    Time: 10 ps  Iteration: 512  Instance: /testbench_1/cpu
 # Break in NamedBeginStat block_1 at InstructionStop.v line 7
 # Stopped at InstructionStop.v line 7
 #  exit
-# End time: 16:48:32 on Nov 14,2018, Elapsed time: 0:00:00
+# End time: 20:24:00 on Nov 15,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 10

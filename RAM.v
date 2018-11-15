@@ -11,22 +11,18 @@ module RAM;
 
     task popWordFromStack(output reg [15: 0] res);
         begin : block_1
-            // res = ram[stackPointer - 16 +: 16];
-            // res[15: 8] = ram[stackPointer - 16 +: 8];
-            // res[7: 0] = ram[stackPointer - 8 +: 8];
             res[0 +: 16] = ram[stackPointer - 16 +: 16];
             stackPointer = stackPointer - 16;
-            $display("Popped %d", res);
+            if (cpu.debugStackOperations)
+                $display("Popped %d", res);
         end
     endtask
 
     task putWordIntoStack;
         input reg [15: 0] in;
         begin
-            $display("Putting %d", in);
-            // ram[stackPointer] = in;
-            // ram[stackPointer +: 8] = in[7 +: 8];
-            // ram[stackPointer + 8 +: 8] = in[0 +: 8];
+            if (cpu.debugStackOperations)
+                $display("Putting %d", in);
             ram[stackPointer +: 16] = in[0 +: 16];
             stackPointer = stackPointer + 16;
         end
