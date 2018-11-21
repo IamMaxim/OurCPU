@@ -31,9 +31,7 @@ Operation format:
 | 17 | putb | puts first 8 bits of given value to stack. |
 | 18 | putw | puts first 16 bits of given value to stack. |
 | 19 | pop  | Removes value of given size from the stack. |
-| 20 | sb  | Takes 8-bit value from stack, then takes 16-bit address from stack and writes it to the given address |
 | 21 | sw  | Takes 16-bit value from stack, then takes 16-bit address from stack and writes it to the given address |
-| 22 | lb  | Takes 16-bit address from stack, then takes 8-bit value from given address and puts it into the stack |
 | 23 | lw  | Takes 16-bit address from stack, then takes 16-bit value from given address and puts it into the stack |
 | 24 | putara | Puts current activation record's address into stack |
 | 25 | putopa | Puts current operation index into stack |
